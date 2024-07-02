@@ -1,5 +1,5 @@
-import BannerUnauthentfiedUser from "../BannerUnauthentfiedUser";
-import HeaderUnauthentifiedUser from "../HeaderUnauthentifiedUser";
+import BannerUnauthentfiedUser from "../components/BannerUnauthentfiedUser";
+import HeaderUnauthentifiedUser from "../components/HeaderUnauthentifiedUser";
 
 const PageHomeUnauthentified = () => {
   return (

@@ -1,4 +1,4 @@
-import PageLogin from "@/components/pages/PageLogin";
+import PageLogin from "@/pages/PageLogin";
 import { render, screen } from "@testing-library/react";
 import { BrowserRouter } from "react-router-dom";
 import { beforeEach, describe, expect, it } from "vitest";

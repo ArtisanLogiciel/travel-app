@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import HeaderUnauthentifiedUser from "../HeaderUnauthentifiedUser";
+import HeaderUnauthentifiedUser from "../components/HeaderUnauthentifiedUser";
 
 const PageRegister = () => {
   return (

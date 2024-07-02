@@ -1,4 +1,4 @@
-import PageUnreachable from "@/components/pages/PageUnreachable";
+import PageUnreachable from "@/pages/PageUnreachable";
 import { render, screen } from "@testing-library/react";
 import { BrowserRouter } from "react-router-dom";
 import { beforeEach, describe, expect, it } from "vitest";

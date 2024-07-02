@@ -1,7 +1,6 @@
-import PageForbidden from "@/components/pages/PageForbidden";
+import PageForbidden from "@/pages/PageForbidden";
 import { render, screen } from "@testing-library/react";
 import { BrowserRouter } from "react-router-dom";
-import { beforeEach, describe, expect, it } from "vitest";
 
 describe("Component PageForbidden", () => {
   beforeEach(() => {
@@ -19,11 +18,17 @@ describe("Component PageForbidden", () => {
     expect(title).toBeInTheDocument();
   });
   it('should contains Link "Connexion"', () => {
-    const link = screen.getByRole("link", { name: /connexion/i });
-    expect(link).toBeInTheDocument();
+    const link = screen.getAllByRole("link", { name: /connexion/i });
+    expect(link[0]).toBeInTheDocument();
+    expect(link[1]).toBeInTheDocument();
   });
   it(' Link "Connexion" should redirect to login page', () => {
-    const link = screen.getByRole("link", { name: /connexion/i });
-    expect(link).toHaveAttribute("href", "/login");
+    const link = screen.getAllByRole("link", { name: /connexion/i });
+    expect(link[0]).toHaveAttribute("href", "/login");
+    expect(link[1]).toHaveAttribute("href", "/login");
+  });
+  it("header should be headerUnauthentified", () => {
+    const header = screen.getByTestId("header-unauthentified");
+    expect(header).toBeInTheDocument();
   });
 });

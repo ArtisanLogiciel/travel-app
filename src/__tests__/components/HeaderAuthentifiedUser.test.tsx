@@ -12,8 +12,8 @@ describe("headerAuthentificationUser component", () => {
     );
   });
   it("should contains a header", () => {
-    const header = screen.getByRole("banner")
-    expect(header).toBeInTheDocument()
+    const header = screen.getByRole("banner");
+    expect(header).toBeInTheDocument();
   });
   test("should contains 'Accueil' Link", () => {
     const homeLink = screen.getByRole("link", { name: /accueil/i });

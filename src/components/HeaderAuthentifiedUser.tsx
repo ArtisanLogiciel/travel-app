@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 const HeaderAuthentifiedUser = () => {
   return (
-    <header className="w-full">
+    <header className="w-full mt-4" data-testid="header-authentified">
       <nav className="flex justify-around w-full">
         <NavLink to="/" className="inline-block">
           Accueil
