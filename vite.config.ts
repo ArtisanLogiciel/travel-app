@@ -6,8 +6,9 @@ import { defineConfig, UserConfig } from "vite";
 export default defineConfig({
   plugins: [react()],
   test: {
+    globals: true,
     environment: "jsdom",
-    setupFiles: ["./setupTest.ts"],
+    setupFiles: ["./src/setupTest.ts"],
   },
   resolve: {
     alias: {
