@@ -1,4 +1,4 @@
-import PageLogin from "@/pages/PageLogin";
+import LoginPage from "@/pages/LoginPage";
 import { render, screen } from "@testing-library/react";
 import { BrowserRouter } from "react-router-dom";
 import { beforeEach, describe, expect, it } from "vitest";
@@ -7,7 +7,7 @@ describe("component PageLogin", () => {
   beforeEach(() => {
     render(
       <BrowserRouter>
-        <PageLogin />
+        <LoginPage />
       </BrowserRouter>
     );
   });

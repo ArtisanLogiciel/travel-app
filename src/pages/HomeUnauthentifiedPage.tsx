@@ -1,7 +1,7 @@
 import BannerUnauthentfiedUser from "../components/BannerUnauthentfiedUser";
 import HeaderUnauthentifiedUser from "../components/HeaderUnauthentifiedUser";
 
-const PageHomeUnauthentified = () => {
+const HomeUnauthentifiedPage = () => {
   return (
     <div>
       <HeaderUnauthentifiedUser />
@@ -10,4 +10,4 @@ const PageHomeUnauthentified = () => {
   );
 };
 
-export default PageHomeUnauthentified;
+export default HomeUnauthentifiedPage;

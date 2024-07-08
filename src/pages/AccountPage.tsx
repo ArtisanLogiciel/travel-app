@@ -1,6 +1,6 @@
 import HeaderAuthentifiedUser from "../components/HeaderAuthentifiedUser";
 
-const PageAccount = () => {
+const AccountPage = () => {
   return (
     <div className="w-screen">
       <HeaderAuthentifiedUser />
@@ -13,4 +13,4 @@ const PageAccount = () => {
   );
 };
 
-export default PageAccount;
+export default AccountPage;

@@ -1,4 +1,4 @@
-import PageRegister from "@/pages/PageRegister";
+import RegisterPage from "@/pages/RegisterPage";
 
 import { render, screen } from "@testing-library/react";
 import { BrowserRouter } from "react-router-dom";
@@ -8,7 +8,7 @@ describe("component PageRegister", () => {
   beforeEach(() => {
     render(
       <BrowserRouter>
-        <PageRegister />
+        <RegisterPage />
       </BrowserRouter>
     );
   });

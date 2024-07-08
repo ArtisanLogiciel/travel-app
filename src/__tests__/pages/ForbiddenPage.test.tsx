@@ -1,4 +1,4 @@
-import PageForbidden from "@/pages/PageForbidden";
+import ForbiddenPage from "@/pages/ForbiddenPage";
 import { render, screen } from "@testing-library/react";
 import { BrowserRouter } from "react-router-dom";
 
@@ -6,7 +6,7 @@ describe("Component PageForbidden", () => {
   beforeEach(() => {
     render(
       <BrowserRouter>
-        <PageForbidden />
+        <ForbiddenPage />
       </BrowserRouter>
     );
   });

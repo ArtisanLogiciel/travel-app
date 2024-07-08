@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import HeaderUnauthentifiedUser from "../components/HeaderUnauthentifiedUser";
 
-const PageLogin = () => {
+const LoginPage = () => {
   return (
     <div className="w-screen ">
       <HeaderUnauthentifiedUser />
@@ -29,4 +29,4 @@ const PageLogin = () => {
   );
 };
 
-export default PageLogin;
+export default LoginPage;

@@ -1,4 +1,4 @@
-import PageHomeUnauthentified from "@/pages/PageHomeUnauthentified";
+import HomeUnauthentifiedPage from "@/pages/HomeUnauthentifiedPage";
 import { render, screen } from "@testing-library/react";
 import { BrowserRouter } from "react-router-dom";
 
@@ -6,7 +6,7 @@ describe("component PageHomeAuthentified", () => {
   beforeEach(() => {
     render(
       <BrowserRouter>
-        <PageHomeUnauthentified />
+        <HomeUnauthentifiedPage />
       </BrowserRouter>
     );
   });

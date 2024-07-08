@@ -1,4 +1,4 @@
-import PageUnreachable from "@/pages/PageUnreachable";
+import UnreachablePage from "@/pages/UnreachablePage";
 import { render, screen } from "@testing-library/react";
 import { BrowserRouter } from "react-router-dom";
 import { beforeEach, describe, expect, it } from "vitest";
@@ -7,7 +7,7 @@ describe("Component PageUnreachable", () => {
   beforeEach(() => {
     render(
       <BrowserRouter>
-        <PageUnreachable />
+        <UnreachablePage />
       </BrowserRouter>
     );
   });

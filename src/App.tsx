@@ -1,12 +1,12 @@
 import { useState } from "react";
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
-import PageAccount from "./pages/PageAccount.tsx";
-import PageForbidden from "./pages/PageForbidden.tsx";
-import Home from "./pages/PageHomeAuthentified.tsx";
-import PageHomeUnauthentified from "./pages/PageHomeUnauthentified.tsx";
-import PageLogin from "./pages/PageLogin.tsx";
-import PageRegister from "./pages/PageRegister.tsx";
-import PageUnreachable from "./pages/PageUnreachable.tsx";
+import AccountPage from "./pages/AccountPage.tsx";
+import ForbiddenPage from "./pages/ForbiddenPage.tsx";
+import Home from "./pages/HomeAuthentifiedPage.tsx";
+import HomeUnauthentifiedPage from "./pages/HomeUnauthentifiedPage.tsx";
+import LoginPage from "./pages/LoginPage.tsx";
+import RegisterPage from "./pages/RegisterPage.tsx";
+import UnreachablePage from "./pages/UnreachablePage.tsx";
 
 function App() {
   const [isAuthUser] = useState<boolean>(true);
@@ -15,21 +15,21 @@ function App() {
       <Routes>
         <Route
           path="/"
-          element={isAuthUser ? <Home /> : <PageHomeUnauthentified />}
+          element={isAuthUser ? <Home /> : <HomeUnauthentifiedPage />}
         />
         <Route
           path="/my-account"
-          element={isAuthUser ? <PageAccount /> : <PageForbidden />}
+          element={isAuthUser ? <AccountPage /> : <ForbiddenPage />}
         />
         <Route
           path="/login"
-          element={isAuthUser ? <Navigate to="/" /> : <PageLogin />}
+          element={isAuthUser ? <Navigate to="/" /> : <LoginPage />}
         />
         <Route
           path="/register"
-          element={isAuthUser ? <Navigate to="/" /> : <PageRegister />}
+          element={isAuthUser ? <Navigate to="/" /> : <RegisterPage />}
         />
-        <Route path="*" element={<PageUnreachable />} />
+        <Route path="*" element={<UnreachablePage />} />
       </Routes>
     </BrowserRouter>
   );
